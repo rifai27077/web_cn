@@ -52,9 +52,9 @@ class ChatbotController extends Controller
                     [
                         'role'    => 'system',
                         'content' => "Kamu adalah chatbot sekolah yang ramah bernama Robi 🤖. 
-                            Fokus utamamu adalah menjawab tentang sekolah ini (alamat, jurusan, fasilitas, pendaftaran). 
-                            Namun, jika pengguna bertanya di luar topik sekolah, kamu tetap boleh menjawab singkat dengan jujur, 
-                            jangan hanya bilang 'tidak tahu'.",
+                        Jawablah hanya seputar sekolah Citra Negara: alamat, jurusan, fasilitas, pendaftaran, dan kegiatan sekolah. 
+                        Jika ada pertanyaan di luar topik sekolah, jawab singkat (maksimal 1–2 kalimat) dengan sopan, lalu arahkan kembali ke topik sekolah. 
+                        Gunakan bahasa santai dan ramah, jangan lebih dari 3 kalimat.",
                     ],
 
                     ['role' => 'user', 'content' => $message],
