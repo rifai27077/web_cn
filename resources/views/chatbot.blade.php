@@ -154,64 +154,64 @@ document.getElementById('chat-form').addEventListener('submit', async (e) => {
         // Timestamp bot
         const botTimestamp = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
-// Tambah pesan bot dengan avatar
-const botMessage = document.createElement("div");
-botMessage.className = "flex justify-start flex-col space-y-1 items-start";
+    // Tambah pesan bot dengan avatar
+    const botMessage = document.createElement("div");
+    botMessage.className = "flex justify-start flex-col space-y-1 items-start";
 
-botMessage.innerHTML = `
-    <div class="flex items-start space-x-2">
-        <!-- Avatar Robi -->
-        <img src="/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
-        <!-- Pesan bot -->
-        <span class="bg-gray-200 text-gray-800 px-3 py-2 rounded-2xl shadow-sm max-w-[80%] md:max-w-[65%] break-words whitespace-pre-line"></span>
-    </div>
-    <span class="text-[10px] text-gray-500 ml-10">${botTimestamp}</span>
-`;
-chatBox.appendChild(botMessage);
+    botMessage.innerHTML = `
+        <div class="flex items-start space-x-2">
+            <!-- Avatar Robi -->
+            <img src="/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
+            <!-- Pesan bot -->
+            <span class="bg-gray-200 text-gray-800 px-3 py-2 rounded-2xl shadow-sm max-w-[80%] md:max-w-[65%] break-words whitespace-pre-line"></span>
+        </div>
+        <span class="text-[10px] text-gray-500 ml-10">${botTimestamp}</span>
+    `;
+    chatBox.appendChild(botMessage);
 
-const span = botMessage.querySelector("span:nth-child(1) span") || botMessage.querySelector("span.bg-gray-200");
+    const span = botMessage.querySelector("span:nth-child(1) span") || botMessage.querySelector("span.bg-gray-200");
 
-// Gunakan tipe karakter per karakter seperti sebelumnya
-const textParts = formatBotMessageWithLinks(data.reply);
-let partIndex = 0;
-let charIndex = 0;
+    // Gunakan tipe karakter per karakter seperti sebelumnya
+    const textParts = formatBotMessageWithLinks(data.reply);
+    let partIndex = 0;
+    let charIndex = 0;
 
-function typeNextChar() {
-    if (partIndex >= textParts.length) {
-        input.disabled = false;
-        submitBtn.disabled = false;
-        submitBtn.classList.remove("opacity-50", "cursor-not-allowed");
-        input.focus();
-        return;
-    }
+    function typeNextChar() {
+        if (partIndex >= textParts.length) {
+            input.disabled = false;
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-50", "cursor-not-allowed");
+            input.focus();
+            return;
+        }
 
-    const part = textParts[partIndex];
+        const part = textParts[partIndex];
 
-    if (part.type === 'text') {
-        if (charIndex < part.content.length) {
-            span.innerHTML += part.content.charAt(charIndex);
-            charIndex++;
-            chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: 'smooth' });
-            setTimeout(typeNextChar, 15);
-        } else {
+        if (part.type === 'text') {
+            if (charIndex < part.content.length) {
+                span.innerHTML += part.content.charAt(charIndex);
+                charIndex++;
+                chatBox.scrollTo({ top: chatBox.scrollHeight, behavior: 'smooth' });
+                setTimeout(typeNextChar, 15);
+            } else {
+                partIndex++;
+                charIndex = 0;
+                typeNextChar();
+            }
+        } else if (part.type === 'link') {
+            const a = document.createElement('a');
+            a.href = part.content;
+            a.target = "_blank";
+            a.className = "underline text-blue-600 hover:text-blue-800";
+            a.textContent = part.content;
+            span.appendChild(a);
             partIndex++;
             charIndex = 0;
             typeNextChar();
         }
-    } else if (part.type === 'link') {
-        const a = document.createElement('a');
-        a.href = part.content;
-        a.target = "_blank";
-        a.className = "underline text-blue-600 hover:text-blue-800";
-        a.textContent = part.content;
-        span.appendChild(a);
-        partIndex++;
-        charIndex = 0;
-        typeNextChar();
     }
-}
 
-typeNextChar();
+    typeNextChar();
 
 
     } catch (err) {
