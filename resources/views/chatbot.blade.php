@@ -23,7 +23,7 @@
         </div>
 
         <!-- Avatar -->
-        <img src="/robi.png" alt="Robi" class="w-20 h-20 rounded-full mb-3">
+        <img src="/img/robi.png" alt="Robi" class="w-20 h-20 rounded-full mb-3">
 
         <!-- Judul & deskripsi -->
         <h2 class="text-xl font-bold mb-1">Kenalan sama Robi yuk!</h2>
@@ -161,7 +161,7 @@ document.getElementById('chat-form').addEventListener('submit', async (e) => {
     botMessage.innerHTML = `
         <div class="flex items-start space-x-2">
             <!-- Avatar Robi -->
-            <img src="/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
+            <img src="/img/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
             <!-- Pesan bot -->
             <span class="bg-gray-200 text-gray-800 px-3 py-2 rounded-2xl shadow-sm max-w-[80%] md:max-w-[65%] break-words whitespace-pre-line"></span>
         </div>
