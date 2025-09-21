@@ -5,7 +5,7 @@ use App\Http\Controllers\ChatbotController;
 
 // Halaman utama
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
 
