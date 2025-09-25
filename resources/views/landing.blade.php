@@ -2,45 +2,75 @@
 
 @section('content')
     {{-- Hero Section --}}
-    <section class="relative">
-        <img src="{{ asset('images/hero.jpg') }}" alt="Hero Citra Negara" class="w-full h-[600px] object-cover">
-        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-            <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">CITRA NEGARA</h1>
-            <p class="mt-3 text-xl md:text-2xl font-semibold">SMP - SMA - SMK</p>
-        </div>
-    </section>
+   <section class="relative">
+  <img src="/images/lp-1.png" alt="Hero Citra Negara" class="object-cover rounded-3xl mt-8 mb-8 mx-4">
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+    <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">CITRA NEGARA</h1>
+    <p class="mt-3 text-xl md:text-2xl font-semibold text-black p-2 bg-[#C3E956]">SMP - SMA - SMK</p>
+  </div>
+</section>
 
-    {{-- Founder --}}
-    <section class="py-16 bg-white text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-green-700">Founder</h2>
-        <p class="mt-2 text-lg font-semibold text-yellow-600">Yayasan AT-TAQWA Kemiri Jaya</p>
-        <p class="text-gray-700 font-semibold">Drs. H. Hasan, MM & Hj. Mutia, S.Pd, M.M</p>
-        <p class="text-gray-500">Penasehat Yayasan YATKJ</p>
+{{-- Founder --}}
+<section class="pt-12">
+  <section class="pt-12">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-2 text-center">Founder</h2>
+  <p class="text-3xl md:text-5xl font-extrabold text-[#8DC63F] mb-10 text-center">Yayasan AT–TAQWA Kemiri Jaya</p>
 
-        <div class="mt-10 flex flex-wrap justify-center gap-12">
-            <div class="max-w-[220px]">
-                <img src="{{ asset('images/founder1.png') }}" class="rounded-xl shadow-lg" alt="Ketua BPH">
-                <p class="mt-3 font-bold text-yellow-700">Dr. M. Rizki Darmagana Hasan, S.T., M.Pd</p>
-                <p class="text-gray-600">Ketua BPH</p>
-            </div>
-            <div class="max-w-[220px]">
-                <img src="{{ asset('images/founder2.png') }}" class="rounded-xl shadow-lg" alt="Wakil BPH">
-                <p class="mt-3 font-bold text-yellow-700">Agustin Wijayanti, S.H., M.M</p>
-                <p class="text-gray-600">Wakil BPH</p>
-            </div>
-        </div>
-    </section>
+  <div class="flex flex-col md:flex-row items-start md:items-end justify-center gap-6 md:gap-12 max-w-[1200px] mx-auto">
+    
+    <!-- Ketua BPH -->
+    <div class="flex flex-col items-center relative pt-12 w-64">
+      <img src="{{ asset('images/ketuabph.png') }}" class="object-contain" alt="Ketua BPH">
+      <span class="inline-block bg-[#E9DC00] font-bold text-base md:text-lg rounded-full px-6 py-2 shadow whitespace-nowrap">
+        Dr. M. Rizki Darmaguna Hasan, S.Tr., M.Pd
+      </span>
+      <p class="text-gray-700 mt-1">Ketua BPH</p>
+    </div>
 
-    {{-- Visi Misi --}}
-    <section class="py-16 bg-green-50">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6">
-            <div class="bg-white shadow-md rounded-2xl p-8">
-                <h3 class="text-xl font-bold text-green-700 mb-3">VISI</h3>
-                <p class="text-gray-700">Terwujudnya Sekolah yang Religius, Disiplin dan Terampil dalam Menyongsong Generasi Emas di tahun 2045</p>
-            </div>
-            <div class="bg-white shadow-md rounded-2xl p-8">
-                <h3 class="text-xl font-bold text-green-700 mb-3">MISI</h3>
-                <p class="text-gray-700">Mewujudkan insan yang taat beribadah, cinta kebersihan, berdisiplin, serta unggul dalam akademik dan keterampilan...</p>
+    <!-- Penasehat -->
+    <div class="flex flex-col items-center mb-20 relative w-72">
+      <img src="{{ asset('images/penasehat.png') }}" class="object-contain" alt="Penasehat Yayasan YATKJ">
+      <span class="inline-block bg-[#E9DC00] font-bold text-base md:text-lg rounded-full px-6 py-2 shadow whitespace-nowrap">
+        Drs. H. Nasan, M.M &amp; Hj. Mutia, S.Pd., M.M
+      </span>
+      <p class="text-gray-700 mt-1">Penasehat Yayasan YATKJ</p>
+    </div>
+
+    <!-- Wakil BPH -->
+    <div class="flex flex-col items-center pt-12 relative w-48">
+      <img src="{{ asset('images/wakilbph.png') }}" class="object-contain" alt="Wakil Ketua BPH">
+      <span class="inline-block bg-[#E9DC00] font-bold text-base md:text-lg rounded-full px-6 py-2 shadow whitespace-nowrap">
+        Agustin Wijayanti, S.H., M.M
+      </span>
+      <p class="text-gray-700 mt-1">Wakil Ketua BPH</p>
+    </div>
+
+  </div>
+</section>
+
+{{-- Visi Misi --}}
+    <div class="bg-[#699D15] text-center rounded-3xl w-full px-4 py-10 md:py-14">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Pilihan yang tepat,<br><span class="text-[#E9DC00]">Disekolah yang mantap</span></h3>
+            <p class="text-white text-base md:text-lg mb-8">Yayasan AT–TAQWA Kemiri Jaya dibangun pada tahun 2004 di Jl. Raya Tanah Baru No.99 Kemiri Jaya, Beji, Depok 16421, Yayasan ini di perakarsai serta di miliki oleh Bpk. H. Drs. Nasan, M.M, kemudian di tahun sama sekolah SMK Citra Negara dibuka. Sekolah SMK Citra Negara berdiri pada tahun 2004, pada awal berdirinya SMK Citra Negara yang berada di bawah yayasan AT–TAQWA hanya memiliki 1 program keahlian yaitu Tata Niaga (TN). Kemudian pada tahun 2007 SMK Citra Negara kembali membuka program keahlian baru yaitu Teknik Komputer Jaringan (TKJ), lalu jurusan Multimedia (MM) pada tahun 2011, jurusan Administrasi Perkantoran (AP) dan Rekayasa Perangkat Lunak (RPL) pada tahun 2015, terakhir jurusan Perhotelan pada tahun 2025. Sehingga total Program keahlian yang dimiliki SMK Citra Negara pada saat ini berjumlah 6 jurusan.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl p-8 flex flex-col h-full">
+                    <div class="flex items-center mb-6">
+                        <span class="flex items-center justify-center bg-[#699D15] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
+                            <img src="/images/sparkles.png" class="h-8 w-8">
+                        </span>
+                        <span class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide text-left">VISI</span>
+                    </div>
+                    <p class="text-gray-700 text-left text-base md:text-lg">Terwujudnya Sekolah yang Religius, Disiplin dan Terampil Dalam Menyongsong Generasi Emas di tahun 2045</p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 flex flex-col h-full">
+                    <div class="flex items-center mb-6">
+                        <span class="flex items-center justify-center bg-[#E9DC00] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
+                            <img src="/images/vector.png" class="h-8 w-8">
+                        </span>
+                        <span class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide text-left">MISI</span>
+                    </div>
+                    <p class="text-gray-700 text-left text-base md:text-lg">Mewujudkan Insan yang taat beribadah, cinta kepada kitab suci dan pandai dalam dakwah keagamaan. Mewujudkan peserta didik yang berperilaku baik, patuh, dan memiliki jiwa kepemimpinan. Mewujudkan peserta didik yang ahli sesuai dengan kejuruan, sinkronasi kurikulum intrakurikuler dengan ekstrakurikuler, dan pengembangan kerjasama dengan dunia industri.</p>
+                </div>
             </div>
         </div>
     </section>

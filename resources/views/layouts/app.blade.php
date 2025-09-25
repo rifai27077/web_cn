@@ -15,7 +15,7 @@
 
     @stack('styles')
 </head>
-<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 overflow-x-hidden">
     
     {{-- Header pakai Blade component --}}
     <x-header class="sticky" />
