@@ -2,8 +2,8 @@
 
 @section('content')
     {{-- Hero Section --}}
-   <section class="relative">
-  <img src="/images/lp-1.png" alt="Hero Citra Negara" class="object-cover rounded-3xl mt-8 mb-8 mx-4">
+   <section class="items-center justify-center">
+  <img src="/images/lp-1.png" alt="Hero Citra Negara" class="rounded-3xl object-cover p-10">
   <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
     <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">CITRA NEGARA</h1>
     <p class="mt-3 text-xl md:text-2xl font-semibold text-black p-2 bg-[#C3E956]">SMP - SMA - SMK</p>
@@ -13,8 +13,8 @@
 {{-- Founder --}}
 <section class="pt-12">
   <section class="pt-12">
-  <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-2 text-center">Founder</h2>
-  <p class="text-3xl md:text-5xl font-extrabold text-[#8DC63F] mb-10 text-center">Yayasan AT–TAQWA Kemiri Jaya</p>
+  <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2 text-center">Founder</h2>
+  <p class="text-3xl md:text-5xl font-extrabold text-[#699D15] mb-10 text-center">Yayasan AT–TAQWA Kemiri Jaya</p>
 
   <div class="flex flex-col md:flex-row items-start md:items-end justify-center gap-6 md:gap-12 max-w-[1200px] mx-auto">
     
@@ -103,133 +103,92 @@
         </div>
     </section> --}}
 
-    {{-- Unit Pendidikan --}}
-    <section class="py-16 bg-white text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-green-700">Ketahui lebih lanjut</h2>
-        <p class="text-lg text-gray-600">Pilih unit pendidikan yang sesuai untuk masa depanmu</p>
 
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-            @foreach ([
-                ['key' => 'smp', 'title' => 'SMP', 'desc' => 'Jenjang Sekolah Menengah Pertama dengan kurikulum unggulan berbasis karakter.'],
-                ['key' => 'sma', 'title' => 'SMA', 'desc' => 'Jenjang Sekolah Menengah Atas yang berfokus pada akademik dan persiapan kuliah.'],
-                ['key' => 'smk', 'title' => 'SMK', 'desc' => 'Jenjang Sekolah Menengah Kejuruan dengan keterampilan siap kerja.'],
-            ] as $unit)
-                <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                    <div class="relative">
-                        <img src="{{ asset('images/'.$unit['key'].'.jpg') }}" alt="{{ $unit['title'] }}" 
-                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <h3 class="absolute bottom-3 left-4 text-white font-bold text-xl drop-shadow-lg">
-                            {{ $unit['title'] }}
-                        </h3>
-                    </div>
-                    <div class="p-6 text-left">
-                        <p class="text-gray-600 mb-4">{{ $unit['desc'] }}</p>
-                        <a href="#" class="inline-block px-5 py-2 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">
-                            Lihat Selengkapnya
-                        </a>
-                    </div>
+    {{-- Unit Pendidikan --}}
+    <section class="py-16 bg-[#F5F6F7] text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-2">Ketahui lebih lanjut</h2>
+        <p class="text-2xl md:text-3xl font-extrabold text-[#8DC63F] mb-10">unit pendidikan pilihanmu disini</p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
+            <!-- SMP Card -->
+            <div class="flex flex-col items-center w-80">
+                <img src="/images/u-smp.png" alt="SMP" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
+                <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+                    <span class="text-white font-extrabold text-2xl">SMP</span>
+                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
                 </div>
-            @endforeach
+            </div>
+            <!-- SMA Card -->
+            <div class="flex flex-col items-center w-80">
+                <img src="/images/u-sma.png" alt="SMA" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
+                <div class="bg-[#8DC63F] w-full  rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+                    <span class="text-white font-extrabold text-2xl">SMA</span>
+                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
+                </div>
+            </div>
+            <!-- SMK Card -->
+            <div class="flex flex-col items-center w-80">
+                <img src="/images/u-smk.png" alt="SMK" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
+                <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+                    <span class="text-white font-extrabold text-2xl">SMK</span>
+                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    {{-- Unit Pendidikan --}}
-<section class="py-16 bg-white text-center">
-    <h2 class="text-2xl md:text-3xl font-bold text-green-700">Ketahui lebih lanjut</h2>
-    <p class="text-lg text-gray-600">Pilih unit pendidikan yang sesuai untuk masa depanmu</p>
-
-    {{-- Grid untuk Desktop --}}
-    <div class="hidden md:grid mt-12 grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
-        @foreach ([
-            ['key' => 'smp', 'title' => 'SMP', 'desc' => 'Jenjang Sekolah Menengah Pertama dengan kurikulum unggulan berbasis karakter.'],
-            ['key' => 'sma', 'title' => 'SMA', 'desc' => 'Jenjang Sekolah Menengah Atas yang berfokus pada akademik dan persiapan kuliah.'],
-            ['key' => 'smk', 'title' => 'SMK', 'desc' => 'Jenjang Sekolah Menengah Kejuruan dengan keterampilan siap kerja.'],
-        ] as $unit)
-            <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                <div class="relative">
-                    <img src="{{ asset('images/'.$unit['key'].'.jpg') }}" alt="{{ $unit['title'] }}" 
-                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                    <h3 class="absolute bottom-3 left-4 text-white font-bold text-xl drop-shadow-lg">
-                        {{ $unit['title'] }}
-                    </h3>
-                </div>
-                <div class="p-6 text-left">
-                    <p class="text-gray-600 mb-4">{{ $unit['desc'] }}</p>
-                    <a href="#" class="inline-block px-5 py-2 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">
-                        Lihat Selengkapnya
-                    </a>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    {{-- Carousel untuk Mobile --}}
-    <div class="md:hidden mt-12 px-4">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                @foreach ([
-                    ['key' => 'smp', 'title' => 'SMP', 'desc' => 'Jenjang Sekolah Menengah Pertama dengan kurikulum unggulan berbasis karakter.'],
-                    ['key' => 'sma', 'title' => 'SMA', 'desc' => 'Jenjang Sekolah Menengah Atas yang berfokus pada akademik dan persiapan kuliah.'],
-                    ['key' => 'smk', 'title' => 'SMK', 'desc' => 'Jenjang Sekolah Menengah Kejuruan dengan keterampilan siap kerja.'],
-                ] as $unit)
-                    <div class="swiper-slide">
-                        <div class="group bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
-                            <div class="relative">
-                                <img src="{{ asset('images/'.$unit['key'].'.jpg') }}" alt="{{ $unit['title'] }}" 
-                                     class="w-full h-48 object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <h3 class="absolute bottom-3 left-4 text-white font-bold text-xl drop-shadow-lg">
-                                    {{ $unit['title'] }}
-                                </h3>
-                            </div>
-                            <div class="p-6 text-left">
-                                <p class="text-gray-600 mb-4">{{ $unit['desc'] }}</p>
-                                <a href="#" class="inline-block px-5 py-2 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">
-                                    Lihat Selengkapnya
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-
-            <!-- Pagination & Navigation -->
-            <div class="swiper-pagination mt-4"></div>
-        </div>
-    </div>
-</section>
-
     {{-- Informasi Terkini --}}
-    <section class="py-16 bg-gray-50">
-        <h2 class="text-center text-2xl md:text-3xl font-bold text-green-700">Informasi terkini Citra Negara</h2>
-        <div class="mt-8 max-w-6xl mx-auto flex items-center gap-4 overflow-x-auto px-6">
-            {{-- Dummy Cards (nanti bisa pake carousel JS) --}}
-            <div class="bg-white rounded-xl shadow-md w-80 shrink-0">
-                <img src="{{ asset('images/news1.jpg') }}" class="w-full h-40 object-cover rounded-t-xl">
-                <div class="p-4">
-                    <p class="text-gray-700">Grand Opening PPDB 2026/2027 dihadiri Wali Kota Depok</p>
-                    <span class="text-sm text-gray-500">25 Agustus 2025</span>
+    <section class="py-16 bg-white">
+        <h2 class="text-center text-2xl md:text-3xl font-extrabold text-[#7CB518] mb-8">Informasi terkini Citra Negara</h2>
+        <div class="flex justify-center items-center">
+            <!-- Left Arrow -->
+            <button class="flex items-center justify-center w-10 h-10 bg-[#FFE14D] rounded-full shadow mr-4 text-2xl font-bold text-[#7CB518] hover:bg-[#FFEB7A] transition">
+                <span>&lt;</span>
+            </button>
+            <!-- News Cards -->
+            <div class="flex gap-8">
+                <!-- News 1 -->
+                <div class="bg-white rounded-2xl shadow-lg w-[340px] flex flex-col items-start">
+                    <img src="/images/berita1.png" alt="News 1" class="w-full h-48 object-cover rounded-t-2xl">
+                    <div class="p-5 w-full">
+                        <p class="font-semibold text-base text-[#222] leading-snug mb-2">GRAND OPENING SPMB CITRA NEGARA 2026/2027<br> dihadiri langsung oleh Walikota Depok,<br> Dr. Drs. H. Supian Suri, M.M</p>
+                        <span class="text-[#699D15] text-sm font-semibold">25 Agustus 2025</span>
+                    </div>
+                </div>
+                <!-- News 2 -->
+                <div class="bg-white rounded-2xl shadow-lg w-[340px] flex flex-col items-start">
+                    <img src="/images/berita2.png" alt="News 2" class="w-full h-48 object-cover rounded-t-2xl">
+                    <div class="p-5 w-full">
+                        <p class="font-semibold text-base text-[#222] leading-snug mb-2">Hari ini di SMK-SMA Citra Negara kita sudah melakukan pengundian DOORPRIZE untuk 5 pendaftar yang sudah LUNAS</p>
+                        <span class="text-[#699D15] text-sm font-semibold">29 Agustus 2025</span>
+                    </div>
+                </div>
+                <!-- News 3 -->
+                <div class="bg-white rounded-2xl shadow-lg w-[340px] flex flex-col items-start">
+                    <img src="/images/berita1.png" alt="News 3" class="w-full h-48 object-cover rounded-t-2xl">
+                    <div class="p-5 w-full">
+                        <p class="font-semibold text-base text-[#222] leading-snug mb-2">Kegiatan bakti sosial siswa Citra Negara dalam rangka Hari Kemerdekaan RI ke-80</p>
+                        <span class="text-[#699D15] text-sm font-semibold">17 Agustus 2025</span>
+                    </div>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-md w-80 shrink-0">
-                <img src="{{ asset('images/news2.jpg') }}" class="w-full h-40 object-cover rounded-t-xl">
-                <div class="p-4">
-                    <p class="text-gray-700">SMK-SMA Citra Negara mengadakan doorprize PPDB</p>
-                    <span class="text-sm text-gray-500">29 Agustus 2025</span>
-                </div>
-            </div>
+            <!-- Right Arrow -->
+            <button class="flex items-center justify-center w-10 h-10 bg-[#FFE14D] rounded-full shadow ml-4 text-2xl font-bold hover:bg-[#FFEB7A] transition">
+                <span>&gt;</span>
+            </button>
         </div>
     </section>
 
     {{-- CTA --}}
-    <section class="py-16 bg-white text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-green-700">Kami selalu terbuka untukmu</h2>
-        <p class="mt-2 text-lg text-gray-600">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
+    <section class="pt-16 pb-0 bg-white text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#699D15]">Kami selalu terbuka untukmu</h2>
+        <p class="mt-2 text-2xl font-bold text-[#699D15]">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
-            <a href="#kontak" class="px-6 py-3 bg-yellow-400 text-black rounded-xl font-bold">Hubungi Kami</a>
-            <a href="#ppdb" class="px-6 py-3 bg-green-600 text-white rounded-xl font-bold">Daftar PPDB</a>
+            <a href="#kontak" class="px-6 py-3 bg-[#E9DC00] rounded-xl font-semibold">Hubungi Kami</a>
+            <a href="#ppdb" class="px-6 py-3 bg-[#E9DC00] rounded-xl font-semibold">Daftar PPDB</a>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+            <img src="/images/Desain tanpa judul 1.png" alt="" srcset="">
         </div>
     </section>
 
