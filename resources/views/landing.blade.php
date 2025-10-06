@@ -1,12 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- Hero Section --}}
-   <section class="items-center justify-center">
-  <img src="/images/lp-1.png" alt="Hero Citra Negara" class="rounded-3xl object-cover p-10">
+{{-- Hero Section --}}
+<section class="relative flex items-center justify-center w-full overflow-hidden px-4 md:px-12 lg:px-5 top-6">
+  <!-- Hero Image -->
+  <img 
+    src="/images/lp-1.png" 
+    alt="Hero Citra Negara" 
+    class="w-full h-[60vh] md:h-[80vh] object-cover rounded-3xl md:rounded-[2rem] shadow-lg"
+  >
+
+  <!-- Overlay Content -->
   <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-    <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">CITRA NEGARA</h1>
-    <p class="mt-3 text-xl md:text-2xl font-semibold text-black p-2 bg-[#C3E956]">SMP - SMA - SMK</p>
+    <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-lg tracking-wide">
+      CITRA NEGARA
+    </h1>
+    <p class="mt-4 text-lg md:text-2xl font-semibold text-black bg-[#C3E956] px-4 py-2 rounded-lg">
+      SMP - SMA - SMK
+    </p>
   </div>
 </section>
 
@@ -192,6 +203,21 @@
         </div>
     </section>
 
+    <div id="chat-robibtn-wrapper" class="fixed bottom-6 right-6 flex flex-col items-end space-y-2 z-50">
+      <!-- Tooltip -->
+      <div id="robi-tooltip" 
+           class="bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow-md opacity-0 translate-y-2 transition-all duration-700">
+        Hai! Chat dengan Robi 👋
+      </div>
+
+      <!-- Tombol -->
+      <a href="/chat" 
+         id="chat-robibtn"
+         class="bg-[#699D15] hover:bg-[#558512] text-white shadow-xl rounded-full w-16 h-16 flex items-center justify-center transition-all duration-300 opacity-0 scale-75">
+          <img src="/img/robi.png" alt="Chat Robi" class="w-12 h-12 rounded-full">
+      </a>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             new Swiper('.swiper', {
@@ -207,6 +233,26 @@
             },
             loop: true, // biar muter terus
             });
+
+            const btn = document.getElementById("chat-robibtn");
+            const tooltip = document.getElementById("robi-tooltip");
+
+            // Animasi tombol muncul
+            setTimeout(() => {
+            btn.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
+            btn.style.opacity = "1";
+            btn.style.transform = "scale(1) translateY(-5px)";
+            }, 300);
+
+            // Munculkan tooltip
+            setTimeout(() => {
+            tooltip.classList.remove("opacity-0", "translate-y-2");
+            }, 800);
+
+            // Sembunyikan tooltip otomatis
+            setTimeout(() => {
+            tooltip.classList.add("opacity-0", "translate-y-2");
+            }, 3500);
         });
     </script>
 

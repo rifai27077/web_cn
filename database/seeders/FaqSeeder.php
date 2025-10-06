@@ -88,7 +88,7 @@ TEXT,
             [
                 'question' => 'Bagaimana cara daftar PPDB?,Info pendaftaran siswa baru?,Kapan PPDB dibuka?',
                 'answer'   => <<<TEXT
-PPDB SMK Citra Negara biasanya dibuka awal tahun ajaran (Jan–Juli).
+PPDB SMK Citra Negara biasanya dibuka awal tahun ajaran.
 Pendaftaran online: https://smk.citranegara.sch.id/
 Atau datang langsung ke sekolah:
 📍 Google Maps: https://maps.app.goo.gl/1Vcff1KaUFw1huHK6
