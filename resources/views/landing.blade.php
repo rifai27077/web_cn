@@ -2,7 +2,7 @@
 
 @section('content')
 {{-- Hero Section --}}
-<section class="relative flex items-center justify-center w-full overflow-hidden px-4 md:px-12 lg:px-5 top-6">
+<section class="relative bg-white overflow-hidden py-20 px-6" data-aos="fade-in" data-aos-duration="1000">
   <!-- Hero Image -->
   <img 
     src="/images/lp-1.png" 
@@ -22,9 +22,7 @@
 </section>
 
 {{-- Founder --}}
-<section class="pt-12">
-  <section class="pt-12">
-  <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2 text-center">Founder</h2>
+<section class="py-20 px-6 bg-white" data-aos="fade-up" data-aos-duration="1000">  <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2 text-center">Founder</h2>
   <p class="text-3xl md:text-5xl font-extrabold text-[#699D15] mb-10 text-center">Yayasan AT–TAQWA Kemiri Jaya</p>
 
   <div class="flex flex-col md:flex-row items-start md:items-end justify-center gap-6 md:gap-12 max-w-[1200px] mx-auto">
@@ -59,33 +57,44 @@
   </div>
 </section>
 
-{{-- Visi Misi --}}
-    <div class="bg-[#699D15] text-center rounded-3xl w-full px-4 py-10 md:py-14">
-            <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">Pilihan yang tepat,<br><span class="text-[#E9DC00]">Disekolah yang mantap</span></h3>
-            <p class="text-white text-base md:text-lg mb-8">Yayasan AT–TAQWA Kemiri Jaya dibangun pada tahun 2004 di Jl. Raya Tanah Baru No.99 Kemiri Jaya, Beji, Depok 16421, Yayasan ini di perakarsai serta di miliki oleh Bpk. H. Drs. Nasan, M.M, kemudian di tahun sama sekolah SMK Citra Negara dibuka. Sekolah SMK Citra Negara berdiri pada tahun 2004, pada awal berdirinya SMK Citra Negara yang berada di bawah yayasan AT–TAQWA hanya memiliki 1 program keahlian yaitu Tata Niaga (TN). Kemudian pada tahun 2007 SMK Citra Negara kembali membuka program keahlian baru yaitu Teknik Komputer Jaringan (TKJ), lalu jurusan Multimedia (MM) pada tahun 2011, jurusan Administrasi Perkantoran (AP) dan Rekayasa Perangkat Lunak (RPL) pada tahun 2015, terakhir jurusan Perhotelan pada tahun 2025. Sehingga total Program keahlian yang dimiliki SMK Citra Negara pada saat ini berjumlah 6 jurusan.</p>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-2xl p-8 flex flex-col h-full">
-                    <div class="flex items-center mb-6">
-                        <span class="flex items-center justify-center bg-[#699D15] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
-                            <img src="/images/sparkles.png" class="h-8 w-8">
-                        </span>
-                        <span class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide text-left">VISI</span>
-                    </div>
-                    <p class="text-gray-700 text-left text-base md:text-lg">Terwujudnya Sekolah yang Religius, Disiplin dan Terampil Dalam Menyongsong Generasi Emas di tahun 2045</p>
-                </div>
-                <div class="bg-white rounded-2xl p-8 flex flex-col h-full">
-                    <div class="flex items-center mb-6">
-                        <span class="flex items-center justify-center bg-[#E9DC00] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px 0 rgba(0,0,0,0.12);">
-                            <img src="/images/vector.png" class="h-8 w-8">
-                        </span>
-                        <span class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide text-left">MISI</span>
-                    </div>
-                    <p class="text-gray-700 text-left text-base md:text-lg">Mewujudkan Insan yang taat beribadah, cinta kepada kitab suci dan pandai dalam dakwah keagamaan. Mewujudkan peserta didik yang berperilaku baik, patuh, dan memiliki jiwa kepemimpinan. Mewujudkan peserta didik yang ahli sesuai dengan kejuruan, sinkronasi kurikulum intrakurikuler dengan ekstrakurikuler, dan pengembangan kerjasama dengan dunia industri.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="py-20 px-6 bg-[#699D15]" data-aos="fade-up" data-aos-duration="1000">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <h3 class="text-2xl md:text-3xl font-extrabold text-white">
+        Pilihan yang tepat,<br /><span class="text-[#E9DC00]">Disekolah yang mantap</span>
+      </h3>
+      <p class="text-white text-base md:text-lg mt-4 mx-auto">
+        Yayasan AT–TAQWA Kemiri Jaya dibangun pada tahun 2004 di Jl. Raya Tanah Baru No.99 Kemiri Jaya, Beji, Depok 16421, Yayasan ini di perakarsai serta di miliki oleh Bpk. H. Drs. Nasan, M.M, kemudian di tahun sama sekolah SMK Citra Negara dibuka. Sekolah SMK Citra Negara berdiri pada tahun 2004, pada awal berdirinya SMK Citra Negara yang berada di bawah yayasan AT–TAQWA hanya memiliki 1 program keahlian yaitu Tata Niaga (TN). Kemudian pada tahun 2007 SMK Citra Negara kembali membuka program keahlian baru yaitu Teknik Komputer Jaringan (TKJ), lalu jurusan Multimedia (MM) pada tahun 2011, jurusan Administrasi Perkantoran (AP) dan Rekayasa Perangkat Lunak (RPL) pada tahun 2015, terakhir jurusan Perhotelan pada tahun 2025. Sehingga total Program keahlian yang dimiliki SMK Citra Negara pada saat ini berjumlah 6 jurusan.
+      </p>
+    </div>
 
+    <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+        <div class="flex items-center mb-6">
+          <span class="flex items-center justify-center bg-[#699D15] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px rgba(0,0,0,0.12)">
+            <img src="/images/sparkles.png" class="h-8 w-8" alt="ikon visi" />
+          </span>
+          <span class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase">VISI</span>
+        </div>
+        <p class="text-gray-700 text-base md:text-lg">
+          Terwujudnya Sekolah yang Religius, Disiplin dan Terampil Dalam Menyongsong Generasi Emas di tahun 2045
+        </p>
+      </div>
+
+    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300">
+        <div class="flex items-center mb-6">
+          <span class="flex items-center justify-center bg-[#E9DC00] rounded-full h-14 w-14 mr-4" style="box-shadow: inset 0 8px 32px rgba(0,0,0,0.12)">
+            <img src="/images/vector.png" class="h-8 w-8" alt="ikon misi" />
+          </span>
+          <span class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase">MISI</span>
+        </div>
+        <p class="text-gray-700 text-base md:text-lg">
+          Mewujudkan Insan yang taat beribadah, cinta kepada kitab suci dan pandai dalam dakwah keagamaan. Mewujudkan peserta didik yang berperilaku baik, patuh, dan memiliki jiwa kepemimpinan. Mewujudkan peserta didik yang ahli sesuai dengan kejuruan, sinkronasi kurikulum intrakurikuler dengan ekstrakurikuler, serta pengembangan kerjasama dengan dunia industri.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
     {{-- Unit Pendidikan --}}
     {{-- <section class="py-16 bg-white">
         <div class="text-center">
@@ -115,41 +124,45 @@
     </section> --}}
 
 
-    {{-- Unit Pendidikan --}}
-    <section class="py-16 bg-[#F5F6F7] text-center">
-        <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-2">Ketahui lebih lanjut</h2>
-        <p class="text-2xl md:text-3xl font-extrabold text-[#8DC63F] mb-10">unit pendidikan pilihanmu disini</p>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
-            <!-- SMP Card -->
-            <div class="flex flex-col items-center w-80">
-                <img src="/images/u-smp.png" alt="SMP" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
-                <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
-                    <span class="text-white font-extrabold text-2xl">SMP</span>
-                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
-                </div>
-            </div>
-            <!-- SMA Card -->
-            <div class="flex flex-col items-center w-80">
-                <img src="/images/u-sma.png" alt="SMA" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
-                <div class="bg-[#8DC63F] w-full  rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
-                    <span class="text-white font-extrabold text-2xl">SMA</span>
-                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
-                </div>
-            </div>
-            <!-- SMK Card -->
-            <div class="flex flex-col items-center w-80">
-                <img src="/images/u-smk.png" alt="SMK" class="aspect-square w-full h-auto object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg]">
-                <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
-                    <span class="text-white font-extrabold text-2xl">SMK</span>
-                    <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px 0 rgba(0,0,0,0.04);">Lihat Selengkapnya</a>
-                </div>
-            </div>
+<section class="py-20 px-6 bg-[#F5F6F7] text-center" data-aos="fade-up" data-aos-duration="1000">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-2">Ketahui lebih lanjut</h2>
+    <p class="text-2xl md:text-3xl font-extrabold text-[#8DC63F] mb-10">unit pendidikan pilihanmu disini</p>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
+      {{-- SMP --}}
+        <div class="flex flex-col items-center w-80 group" data-aos="zoom-in" data-aos-delay="100">
+            <img src="/images/u-smp.png" alt="SMP" class="aspect-square w-full object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg" />
+        <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+          <span class="text-white font-extrabold text-2xl">SMP</span>
+          <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px rgba(0,0,0,0.04)">Lihat Selengkapnya</a>
         </div>
-    </section>
+      </div>
+
+      {{-- SMA --}}
+      <div class="flex flex-col items-center w-80 group" data-aos="zoom-in" data-aos-delay="200">
+        <img src="/images/u-sma.png" alt="SMA" class="aspect-square w-full object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg" />
+        <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+          <span class="text-white font-extrabold text-2xl">SMA</span>
+          <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px rgba(0,0,0,0.04)">Lihat Selengkapnya</a>
+        </div>
+      </div>
+
+      {{-- SMK --}}
+      <div class="flex flex-col items-center w-80 group" data-aos="zoom-in" data-aos-delay="300">
+        <img src="/images/u-smk.png" alt="SMK" class="aspect-square w-full object-cover rounded-tl-[40px] rounded-br-[40px] shadow-lg" />
+        <div class="bg-[#8DC63F] w-full rounded-tl-[48px] rounded-br-[48px] flex flex-col items-center py-8 -mt-20 shadow-lg">
+          <span class="text-white font-extrabold text-2xl">SMK</span>
+          <a href="#" class="bg-white text-[#5B8C24] font-extrabold text-lg rounded-full px-10 py-3 mt-2 transition-all" style="box-shadow:0 2px 8px rgba(0,0,0,0.04)">Lihat Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     {{-- Informasi Terkini --}}
-    <section class="py-16 bg-white">
-        <h2 class="text-center text-2xl md:text-3xl font-extrabold text-[#7CB518] mb-8">Informasi terkini Citra Negara</h2>
+<section class="py-20 px-6 bg-white" data-aos="fade-up" data-aos-duration="1000">        <h2 class="text-center text-2xl md:text-3xl font-extrabold text-[#7CB518] mb-8">Informasi terkini Citra Negara</h2>
         <div class="flex justify-center items-center">
             <!-- Left Arrow -->
             <button class="flex items-center justify-center w-10 h-10 bg-[#FFE14D] rounded-full shadow mr-4 text-2xl font-bold text-[#7CB518] hover:bg-[#FFEB7A] transition">
@@ -190,8 +203,7 @@
     </section>
 
     {{-- CTA --}}
-    <section class="pt-16 pb-0 bg-white text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#699D15]">Kami selalu terbuka untukmu</h2>
+<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000">        <h2 class="text-2xl md:text-3xl font-bold text-[#699D15]">Kami selalu terbuka untukmu</h2>
         <p class="mt-2 text-2xl font-bold text-[#699D15]">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
             <a href="#kontak" class="px-6 py-3 bg-[#E9DC00] rounded-xl font-semibold">Hubungi Kami</a>
@@ -206,7 +218,7 @@
     <div id="chat-robibtn-wrapper" class="fixed bottom-6 right-6 flex flex-col items-end space-y-2 z-50">
       <!-- Tooltip -->
       <div id="robi-tooltip" 
-           class="bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow-md opacity-0 translate-y-2 transition-all duration-700">
+           class="bg-white text-gray-800 text-sm px-2 py-1 rounded-full shadow-md opacity-0 translate-y-2 transition-all duration-700">
         Hai! Chat dengan Robi 👋
       </div>
 
@@ -214,7 +226,7 @@
       <a href="/chat" 
          id="chat-robibtn"
          class="bg-[#699D15] hover:bg-[#558512] text-white shadow-xl rounded-full w-16 h-16 flex items-center justify-center transition-all duration-300 opacity-0 scale-75">
-          <img src="/img/robi.png" alt="Chat Robi" class="w-12 h-12 rounded-full">
+          <img src="/images/robi.png" alt="Chat Robi" class="w-12 h-12 rounded-full">
       </a>
     </div>
 
