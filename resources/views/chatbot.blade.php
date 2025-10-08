@@ -30,7 +30,7 @@
 
   <!-- Intro -->
   <div id="intro-section" class="flex flex-col items-center text-center px-6 pt-16 transition-all duration-700 ease-in-out">
-    <img src="/img/robi.png" alt="Robi" class="w-20 h-20 rounded-full mb-3">
+    <img src="/images/robi.png" alt="Robi" class="w-20 h-20 rounded-full mb-3">
     <h2 class="text-xl font-bold mb-1">Kenalan sama Robi yuk!</h2>
     <p class="text-gray-600 mb-4 text-md">Aku bukan manusia, tapi aku bisa jadi teman ngobrolmu 😉</p>
 
@@ -150,7 +150,7 @@
       botMessage.className = "flex justify-start flex-col space-y-1 items-start px-2";
       botMessage.innerHTML = `
         <div class="flex items-start space-x-2">
-          <img src="/img/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
+          <img src="/images/robi.png" alt="Robi" class="w-8 h-8 rounded-full mt-1">
           <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-2xl shadow-sm max-w-[80%] md:max-w-[65%] break-words whitespace-pre-line"></span>
         </div>
         <span class="text-[10px] text-gray-500 ml-10">${botTimestamp}</span>
