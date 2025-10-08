@@ -265,7 +265,7 @@
             setTimeout(() => {
             tooltip.classList.add("opacity-0", "translate-y-2");
             }, 3500);
-        });
+                  });
     </script>
 
 
