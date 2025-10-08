@@ -21,17 +21,18 @@
   </div>
 
   <!-- Floating Particles -->
-    @php
+  @php
     $top = rand(5, 95);
     $left = rand(5, 95);
     $size = rand(6, 12);
     $delay = rand(0, 10) / 10;
   @endphp
 
-  <div 
+  <div
     class="absolute rounded-full bg-white/20 blur-md animate-[float_10s_ease-in-out_infinite]"
     style="top: {{ $top }}%; left: {{ $left }}%; width: {{ $size }}px; height: {{ $size }}px; animation-delay: {{ $delay }}s;"
   ></div>
+
 
 
   <!-- Hero Content -->
@@ -302,7 +303,7 @@ window.addEventListener('scroll', () => {
 
             <!-- Konten -->
             <div class="p-6 flex flex-col items-center space-y-3 bg-white rounded-b-3xl">
-              <h3 cclass="text-2xl font-extrabold text-[#7CB518]">{{ $unit['title'] }}</h3>
+              <h3 class="text-2xl font-extrabold text-[#7CB518]">{{ $unit['title'] }}</h3>
               <p class="text-gray-600 text-sm text-center">{{ $unit['desc'] }}</p>
               <a href="#" class="mt-4 text-white font-semibold px-8 py-2 rounded-full shadow-md hover:shadow-lg transition hover:opacity-90 bg-[#7CB518]">
                 Lihat Selengkapnya
@@ -478,11 +479,12 @@ document.addEventListener('DOMContentLoaded', () => {
 @endpush
 
     {{-- CTA --}}
-<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000">        <h2 class="text-2xl md:text-3xl font-bold text-[#699D15]">Kami selalu terbuka untukmu</h2>
-        <p class="mt-2 text-2xl font-bold text-[#699D15]">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
+<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000">        
+  <h2 class="text-xl md:text-3xl font-extrabold text-[#699D15]">Kami selalu terbuka untukmu</h2>
+        <p class="rounded-full mt-2 text-xl md:text-2xl font-bold text-yellow-400">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
-            <a href="#kontak" class="px-6 py-3 bg-[#699D15] rounded-xl font-semibold">Hubungi Kami</a>
-            <a href="#ppdb" class="px-6 py-3 bg-[#E9DC00] rounded-xl font-semibold">Daftar PPDB</a>
+            <a href="#kontak" class="px-6 py-3 bg-[#699D15] rounded-full font-semibold text-white">Hubungi Kami</a>
+            <a href="/ppdb" class="px-6 py-3 bg-[#699D15] rounded-full font-semibold text-white">Daftar PPDB</a>
         </div>
 
         <div class="mt-10 flex justify-center">
