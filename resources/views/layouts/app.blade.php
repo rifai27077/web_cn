@@ -52,7 +52,8 @@
     <main class="flex-1 pt-16 md:pt-20">
         @yield('content')
     </main>
-
+    
+    <x-chatrobi />
     <x-footer class="mt-auto" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

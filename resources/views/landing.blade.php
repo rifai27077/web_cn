@@ -209,7 +209,6 @@ window.addEventListener('scroll', () => {
   </div>
 </section>
 
-<<<<<<< HEAD
 {{-- <section class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden" id="vision-mission" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi latar -->
   <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
@@ -270,10 +269,7 @@ window.addEventListener('scroll', () => {
   </div>
 </section> --}}
 
-<section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" id="school" data-aos="fade-up" data-aos-duration="1000">
-=======
 <section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" id="sekolah" data-aos="fade-up" data-aos-duration="1000">
->>>>>>> d3ceb9504ea8b65c025fcf54ba44f612504003b5
   <!-- Dekorasi -->
   <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#8DC63F]/10 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#7CB518]/10 rounded-full blur-3xl"></div>
@@ -388,19 +384,6 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
   <div class="max-w-7xl mx-auto relative z-10">
 
-    {{-- <!-- 🔥 Running Ticker -->
-    <div class="overflow-hidden mb-8 rounded-full bg-[#EFFBE3] border border-[#C8E6A1] shadow-sm" data-aos="fade-down">
-      <div class="whitespace-nowrap animate-[ticker_25s_linear_infinite] py-2">
-        @foreach ([
-          '🌟 Pendaftaran siswa baru tahun ajaran 2025/2026 telah dibuka!',
-          '🏆 Tim RPL SMK Citra Negara raih Juara 1 LKS Provinsi!',
-          '💡 Simak kegiatan Prakerin 2025 di berbagai perusahaan besar!'
-        ] as $item)
-          <span class="mx-6 text-[#699D15] font-semibold">{{ $item }}</span>
-        @endforeach
-      </div>
-    </div> --}}
-
     <!-- Judul -->
     <div class="text-center mb-14">
       <h3 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] leading-snug">
@@ -483,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
 @endpush
 
     {{-- CTA --}}
-<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000" id="contact">        
+<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000" id="contact">      
   <h2 class="text-xl md:text-3xl font-extrabold text-[#699D15]">Kami selalu terbuka untukmu</h2>
         <p class="rounded-full mt-2 text-xl md:text-2xl font-bold text-yellow-400">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
@@ -495,21 +478,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="/images/Desain tanpa judul 1.png" alt="" srcset="">
         </div>
     </section>
-
-    <div id="chat-robibtn-wrapper" 
-        class="fixed bottom-10 right-10 flex flex-col items-end space-y-2 z-50">
-        <!-- Tooltip -->
-        <div id="robi-tooltip" 
-            class="bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow-md opacity-0 translate-y-2 transition-all duration-700">
-            Hai! Chat dengan Robi 👋
-        </div>
-
-        <a href="/chat" id="chat-robibtn" aria-label="Buka chat Robi"
-            class="relative bg-[#699D15] hover:bg-[#558512] text-white shadow-xl rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center transition-all duration-300 opacity-0 scale-75 translate-y-4"
-            style="overflow:visible;">
-            <img src="/images/robi.png" alt="Chat Robi" class="w-[85%] h-[85%] object-contain object-bottom -mb-0.5" />
-        </a>
-    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -526,30 +494,6 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             loop: true, // biar muter terus
             });
-
-            const btn = document.getElementById("chat-robibtn");
-            const tooltip = document.getElementById("robi-tooltip");
-
-            window.addEventListener('DOMContentLoaded', () => {
-                const btn = document.getElementById('chat-robibtn');
-                setTimeout(() => btn.classList.remove('opacity-0','scale-75','translate-y-4'), 300);
-            });
-            // Animasi tombol muncul
-            setTimeout(() => {
-            btn.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
-            btn.style.opacity = "1";
-            btn.style.transform = "scale(1) translateY(-5px)";
-            }, 300);
-
-            // Munculkan tooltip
-            setTimeout(() => {
-            tooltip.classList.remove("opacity-0", "translate-y-2");
-            }, 800);
-
-            // Sembunyikan tooltip otomatis
-            setTimeout(() => {
-            tooltip.classList.add("opacity-0", "translate-y-2");
-            }, 3500);
         });
     </script>
 @endsection

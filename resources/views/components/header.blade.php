@@ -57,7 +57,7 @@
 
         <!-- CTA + Hamburger -->
         <div class="flex items-center gap-4">
-          <a href="/pendaftaran"
+          <a href="/spmb"
             class="hidden md:inline-block bg-[#699D15] text-white font-semibold px-6 py-2.5 rounded-full 
                    shadow-md hover:shadow-lg hover:bg-[#7FBF1D] active:scale-95 transition-all duration-300 text-sm">
             DAFTAR SPMB
@@ -102,7 +102,7 @@
         </a>
       @endforeach
 
-      <a href="/pendaftaran"
+      <a href="/spmb"
         @click="open = false"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">
         DAFTAR SPMB
