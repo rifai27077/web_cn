@@ -34,11 +34,11 @@
         <nav class="hidden md:flex items-center gap-6">
           @php
             $menus = [
-                'history' => 'History',
-                'founder' => 'Founder',
-                'vision-mission' => 'Vision & Mission',
-                'school' => 'School',
-                'contact' => 'Contact Us',
+                'history' => 'Sejarah',
+                'founder' => 'Pendiri',
+                'vision-mission' => 'Visi & Misi',
+                'school' => 'Jenjang Pendidikan',
+                'contact' => 'Hubungi Kami',
             ];
           @endphp
 
@@ -57,7 +57,7 @@
 
         <!-- CTA + Hamburger -->
         <div class="flex items-center gap-4">
-          <a href="/pendaftaran"
+          <a href="/ppdb"
             class="hidden md:inline-block bg-[#699D15] text-white font-semibold px-6 py-2.5 rounded-full 
                    shadow-md hover:shadow-lg hover:bg-[#7FBF1D] active:scale-95 transition-all duration-300 text-sm">
             DAFTAR SPMB
@@ -102,7 +102,7 @@
         </a>
       @endforeach
 
-      <a href="/pendaftaran"
+      <a href="/ppdb"
         @click="open = false"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">
         DAFTAR SPMB

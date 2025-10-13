@@ -271,7 +271,7 @@ window.addEventListener('scroll', () => {
   </div>
 </section> --}}
 
-<section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+<section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" id="school" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi -->
   <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#8DC63F]/10 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#7CB518]/10 rounded-full blur-3xl"></div>
@@ -479,12 +479,12 @@ document.addEventListener('DOMContentLoaded', () => {
 @endpush
 
     {{-- CTA --}}
-<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000">        
+<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000" id="contact">        
   <h2 class="text-xl md:text-3xl font-extrabold text-[#699D15]">Kami selalu terbuka untukmu</h2>
         <p class="rounded-full mt-2 text-xl md:text-2xl font-bold text-yellow-400">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
             <a href="#kontak" class="px-6 py-3 bg-[#699D15] rounded-full font-semibold text-white">Hubungi Kami</a>
-            <a href="/ppdb" class="px-6 py-3 bg-[#699D15] rounded-full font-semibold text-white">Daftar PPDB</a>
+            <a href="/ppdb" class="px-6 py-3 bg-[#699D15] rounded-full font-semibold text-white">Daftar SPMB</a>
         </div>
 
         <div class="mt-10 flex justify-center">
