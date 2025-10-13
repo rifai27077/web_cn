@@ -90,7 +90,7 @@ window.addEventListener('scroll', () => {
 @endpush
 
 <!-- HISTORY SECTION -->
-<section class="relative h-[90vh] py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden" id="history" data-aos="fade-up" data-aos-duration="1000">
+<section class="relative h-[90vh] py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden" id="sejarah" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi latar -->
   <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
   <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
@@ -117,7 +117,7 @@ window.addEventListener('scroll', () => {
   </div>
 </section>
 
-<section class="py-16 px-4 bg-white" id="founder" data-aos="fade-up">
+<section class="py-16 px-4 bg-white" id="yayasan" data-aos="fade-up">
   <div class="max-w-7xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] drop-shadow-[0_2px_6px_rgba(106,152,18,0.5)] mb-2">Founder</h2>
     <p class="text-xl md:text-2xl font-semibold text-[#699D15] mb-10">Yayasan AT–TAQWA Kemiri Jaya</p>
@@ -154,7 +154,7 @@ window.addEventListener('scroll', () => {
   </div>
 </section>
 
-<section id="vision-mission" class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden scroll-mt-24" data-aos="fade-up" data-aos-duration="1000">
+<section id="visi-misi" class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden scroll-mt-24" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi latar -->
   <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
   <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
@@ -211,67 +211,7 @@ window.addEventListener('scroll', () => {
   </div>
 </section>
 
-{{-- <section class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden" id="vision-mission" data-aos="fade-up" data-aos-duration="1000">
-  <!-- Dekorasi latar -->
-  <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
-  <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-
-  <div class="max-w-7xl mx-auto relative z-10">
-    <!-- Judul -->
-    <div class="text-center mb-14">
-      <h3 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
-        Pilihan yang Tepat, <br />
-        <span class="text-[#E9DC00] drop-shadow-[0_2px_6px_rgba(233,220,0,0.6)]">Di Sekolah yang Mantap</span>
-      </h3>
-      <p class="text-white/90 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
-        Yayasan AT–TAQWA Kemiri Jaya dibangun pada tahun 2004 di Jl. Raya Tanah Baru No.99 Kemiri Jaya, Beji, Depok. 
-        Yayasan ini diprakarsai oleh Bpk. <span class="font-semibold">H. Drs. Nasan, M.M</span>. 
-        Kini, SMK Citra Negara memiliki enam jurusan unggulan: Tata Niaga, Teknik Komputer Jaringan, Multimedia, Administrasi Perkantoran, 
-        Rekayasa Perangkat Lunak, dan Perhotelan.
-      </p>
-    </div>
-
-    <!-- Kartu Visi & Misi -->
-    <div class="grid md:grid-cols-2 gap-10">
-      <!-- VISI -->
-      <div class="relative group bg-white rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-3">
-        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#7CB518]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-        
-        <div class="flex items-center mb-6 relative">
-          <div class="flex items-center justify-center h-14 w-14 mr-4 rounded-full bg-[#699D15] shadow-[0_0_15px_rgba(105,157,21,0.4)] transition-transform duration-500 group-hover:scale-110">
-            <img src="/images/sparkles.png" alt="ikon visi" class="h-8 w-8" />
-          </div>
-          <h4 class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide">VISI</h4>
-        </div>
-
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed relative z-10">
-          Terwujudnya sekolah yang religius, disiplin, dan terampil dalam menyongsong generasi emas di tahun 2045.
-        </p>
-      </div>
-
-      <!-- MISI -->
-      <div class="relative group bg-white rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-3">
-        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#E9DC00]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-
-        <div class="flex items-center mb-6 relative">
-          <div class="flex items-center justify-center h-14 w-14 mr-4 rounded-full bg-[#E9DC00] shadow-[0_0_15px_rgba(233,220,0,0.5)] transition-transform duration-500 group-hover:scale-110">
-            <img src="/images/vector.png" alt="ikon misi" class="h-8 w-8" />
-          </div>
-          <h4 class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide">MISI</h4>
-        </div>
-
-        <ul class="text-gray-700 text-base md:text-lg space-y-2 leading-relaxed relative z-10 list-disc pl-6">
-          <li>Mewujudkan insan yang taat beribadah, cinta kitab suci, dan pandai dalam dakwah keagamaan.</li>
-          <li>Membangun peserta didik berperilaku baik, patuh, dan berjiwa kepemimpinan.</li>
-          <li>Mengembangkan keahlian kejuruan dengan sinkronisasi kurikulum dan kerja sama dunia industri.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section> --}}
-
-<section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+<section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" id="sekolah" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi -->
   <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#8DC63F]/10 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#7CB518]/10 rounded-full blur-3xl"></div>
@@ -282,9 +222,9 @@ window.addEventListener('scroll', () => {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
       @foreach ([
-        ['title' => 'SMP', 'img' => '/images/u-smp.png', 'desc' => 'Bangun pondasi akademik yang kuat dengan lingkungan yang mendukung dan inovatif.'],
-        ['title' => 'SMA', 'img' => '/images/u-sma.png', 'desc' => 'Kembangkan potensi akademik dan karakter untuk melangkah ke jenjang berikutnya.'],
-        ['title' => 'SMK', 'img' => '/images/u-smk.png', 'desc' => 'Siap kerja, siap wirausaha, dan siap kuliah dengan keahlian yang terarah.'],
+        ['title' => 'SMP', 'img' => '/images/u-smp.png', 'desc' => 'Bangun pondasi akademik yang kuat dengan lingkungan yang mendukung dan inovatif.', 'link' => '/smp'],
+        ['title' => 'SMA', 'img' => '/images/u-sma.png', 'desc' => 'Kembangkan potensi akademik dan karakter untuk melangkah ke jenjang berikutnya. ', 'link' => '/sma'],
+        ['title' => 'SMK', 'img' => '/images/u-smk.png', 'desc' => 'Siap kerja, siap wirausaha, dan siap kuliah dengan keahlian yang terarah.', 'link' => '/smk'],
       ] as $unit)
       <div class="relative group w-80 perspective" data-aos="zoom-in">
         <!-- Bungkus tetap -->
@@ -303,9 +243,9 @@ window.addEventListener('scroll', () => {
 
             <!-- Konten -->
             <div class="p-6 flex flex-col items-center space-y-3 bg-white rounded-b-3xl">
-              <h3 class="text-2xl font-extrabold text-[#7CB518]">{{ $unit['title'] }}</h3>
+              <h3 class="text-2xl font-extrabold text-gray-700">{{ $unit['title'] }}</h3>
               <p class="text-gray-600 text-sm text-center">{{ $unit['desc'] }}</p>
-              <a href="#" class="mt-4 text-white font-semibold px-8 py-2 rounded-full shadow-md hover:shadow-lg transition hover:opacity-90 bg-[#7CB518]">
+              <a href="{{ $unit['link'] }}" class="mt-4 text-white font-semibold px-8 py-2 rounded-full shadow-md hover:shadow-lg transition hover:opacity-90 bg-[#7CB518]">
                 Lihat Selengkapnya
             </a>
             </div>
@@ -379,11 +319,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <section 
   id="news-section"
-  class="relative py-24 px-6 bg-gradient-to-b from-[#F6FDF2] via-white to-[#FAFFF8] overflow-hidden"
+  class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden"
 >
+<div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
+  <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
   <div class="max-w-7xl mx-auto relative z-10">
 
-    <!-- 🔥 Running Ticker -->
+    {{-- <!-- 🔥 Running Ticker -->
     <div class="overflow-hidden mb-8 rounded-full bg-[#EFFBE3] border border-[#C8E6A1] shadow-sm" data-aos="fade-down">
       <div class="whitespace-nowrap animate-[ticker_25s_linear_infinite] py-2">
         @foreach ([
@@ -394,16 +337,15 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="mx-6 text-[#699D15] font-semibold">{{ $item }}</span>
         @endforeach
       </div>
-    </div>
+    </div> --}}
 
     <!-- Judul -->
     <div class="text-center mb-14">
-      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-[#7CB518] to-[#4B8B00] bg-clip-text text-transparent">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
         Informasi Terkini
-      </h2>
-      <p class="text-lg md:text-xl text-gray-600">
-        Ikuti kabar terbaru, kegiatan, dan prestasi dari 
-        <span class="font-semibold text-[#699D15]">Citra Negara</span>
+      </h3>
+      <p class="text-white/90 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
+        Menjadi lembaga pendidikan kejuruan unggul, berlandaskan nilai religius dan karakter bangsa, serta siap menghadapi era digital.
       </p>
     </div>
 

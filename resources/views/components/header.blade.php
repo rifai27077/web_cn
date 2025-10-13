@@ -34,11 +34,11 @@
         <nav class="hidden md:flex items-center gap-6">
           @php
             $menus = [
-                'history' => 'History',
-                'founder' => 'Founder',
-                'vision-mission' => 'Vision & Mission',
-                'school' => 'School',
-                'contact' => 'Contact Us',
+                'sejarah' => 'Sejarah',
+                'yayasan' => 'Yayasan',
+                'visi-misi' => 'Visi & Misi',
+                'sekolah' => 'Sekolah',
+                'kontak' => 'Kontak Kami',
             ];
           @endphp
 
