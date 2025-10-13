@@ -33,8 +33,6 @@
     style="top: {{ $top }}%; left: {{ $left }}%; width: {{ $size }}px; height: {{ $size }}px; animation-delay: {{ $delay }}s;"
   ></div>
 
-
-
   <!-- Hero Content -->
   <div class="relative z-10 text-center px-6" data-aos="zoom-in" data-aos-duration="1200">
     <h1 class="text-5xl md:text-7xl text-[#C3E956] font-extrabold tracking-wider drop-shadow-[0_0_25px_rgba(195,233,86,0.5)] animate-[fadeDown_1s_ease-out_forwards]">
@@ -319,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <section 
   id="news-section"
-  class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden"
+  class="relative py-24 px-6 bg-gradient-to-b bg-[#f7f7f7] overflow-hidden"
 >
 <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
   <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
@@ -341,10 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <!-- Judul -->
     <div class="text-center mb-14">
-      <h3 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] leading-snug">
         Informasi Terkini
       </h3>
-      <p class="text-white/90 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
+      <p class="text-gray-800 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
         Menjadi lembaga pendidikan kejuruan unggul, berlandaskan nilai religius dan karakter bangsa, serta siap menghadapi era digital.
       </p>
     </div>
