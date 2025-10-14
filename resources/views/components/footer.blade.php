@@ -107,20 +107,25 @@
 
             <!-- Contact Info -->
             <div class="border-b md:border-none mt-2 md:mt-4">
-                <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Contact Info</h3>
-                    <button class="md:hidden p-2" @click="contactOpen = !contactOpen">
-                        <span x-text="contactOpen ? '-' : '+'"></span>
-                    </button>
+            <div class="flex items-center justify-between">
+                <h3 class="font-semibold uppercase tracking-wide">Contact Info</h3>
+                <button class="md:hidden p-2" @click="contactOpen = !contactOpen">
+                <span x-text="contactOpen ? '-' : '+'"></span>
+                </button>
+            </div>
+
+            <div x-show="desktop || contactOpen" x-collapse class="mt-3">
+                <div class="text-sm flex flex-col space-y-2 leading-relaxed">
+                <a href="mailto:info@citranegara.sch.id" class="hover:underline">
+                    info@citranegara.sch.id
+                </a>
+                <a href="tel:02177201052" class="hover:underline">
+                    (021) 77201052
+                </a>
+                <p>Senin - Jumat: 07.00 - 17.00</p>
+                <p>Sabtu: 07.00 - 15.00</p>
                 </div>
-                <div x-show="desktop || contactOpen" x-collapse class="mt-3">
-                    <div class="text-sm space-y-2">
-                        <p><a href="mailto:info@citranegara.sch.id" class="hover:underline break-words">info@citranegara.sch.id</a></p>
-                        <p><a href="tel:02177201052" class="hover:underline">(021) 77201052</a></p>
-                        <p>Senin - Jumat: 07.00 - 17.00</p>
-                        <p>Sabtu: 07.00 - 15.00</p>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
 

@@ -3,7 +3,7 @@
 @section('content')
 <section class="py-16 bg-white">
   <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-black">Pendaftaran Peserta Didik Baru (PPDB)</h2>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-black">Seleksi Penerimaan Murid Baru (SPMB)</h2>
     <p class="text-gray-600 font-medium mt-1 mb-8">SMK Citra Negara</p>
 
     {{-- Informasi Umum --}}
@@ -76,7 +76,7 @@
 
       {{-- Pilihan Jurusan --}}
       <div>
-        <h4 class="text-lg font-bold text-[#7CB518] mb-3">📘 Pilihan Jurusan</h4>
+        <h4 class="text-lg font-bold text-[#7CB518] mb-3">Pilihan Jurusan</h4>
         <select name="jurusan" class="appearance-none w-full border border-gray-300 rounded-full px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[#7CB518] bg-white" style="background-image: linear-gradient(45deg, transparent 50%, #000000ff 50%), linear-gradient(135deg, #000000ff 50%, transparent 50%);
          background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
          background-size: 5px 5px, 5px 5px;
