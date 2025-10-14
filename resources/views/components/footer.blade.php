@@ -34,37 +34,37 @@
                 </p>
 
                 <div class="flex gap-4 mt-5 text-xl">
-                    <a href="https://youtube.com/yourchannel" target="_blank" class="hover:text-red-500 transition">
+                    <a href="https://www.youtube.com/@citranegaratv9070" target="_blank" class="hover:text-red-500 transition">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="https://instagram.com/yourprofile" target="_blank" class="hover:text-pink-500 transition">
+                    <a href="https://instagram.com/smkcitranegaradepok" target="_blank" class="hover:text-pink-500 transition">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://facebook.com/yourpage" target="_blank" class="hover:text-blue-500 transition">
+                    <a href="https://facebook.com/smkcitranegaraofficial" target="_blank" class="hover:text-blue-500 transition">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://twitter.com/yourprofile" target="_blank" class="hover:text-sky-400 transition">
+                    <a href="https://x.com/citranegaraa" target="_blank" class="hover:text-sky-400 transition">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
             </div>
 
         <!-- Wrapper kanan (buat justify-end) -->
-        <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-12 md:justify-end pr-6 md:pr-12">
+        <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-12 md:justify-end pr-6 md:pr-12">
             <!-- Information -->
             <div class="border-b md:border-none mt-2 md:mt-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Information</h3>
+                    <h3 class="font-semibold uppercase tracking-wide">Informasi</h3>
                     <button class="md:hidden p-2" @click="infoOpen = !infoOpen">
                         <span x-text="infoOpen ? '-' : '+'"></span>
                     </button>
                 </div>
                 <div x-show="desktop || infoOpen" x-collapse class="mt-3">
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Yayasan</a></li>
-                        <li><a href="#" class="hover:underline">Sekolah</a></li>
-                        <li><a href="#" class="hover:underline">Visi & Misi</a></li>
-                        <li><a href="#" class="hover:underline">Berita</a></li>
+                        <li><a href="{{ url('/#yayasan') }}" class="hover:underline">Yayasan</a></li>
+                        <li><a href="{{ url('/#sekolah') }}" class="hover:underline">Sekolah</a></li>
+                        <li><a href="{{ url('/#visi-misi') }}" class="hover:underline">Berita</a></li>
+                        <li><a href="{{ url('/kontak') }}" class="hover:underline">Kontak</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,60 +72,36 @@
             <!-- Explore -->
             <div class="border-b md:border-none mt-2 md:mt-4">
                 <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Explore</h3>
+                    <h3 class="font-semibold uppercase tracking-wide">Unit Pendidikan</h3>
                     <button class="md:hidden p-2" @click="exploreOpen = !exploreOpen">
                         <span x-text="exploreOpen ? '-' : '+'"></span>
                     </button>
                 </div>
                 <div x-show="desktop || exploreOpen" x-collapse class="mt-3">
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Bidang Studi</a></li>
-                        <li><a href="#" class="hover:underline">Ekstrakurikuler</a></li>
-                        <li><a href="#" class="hover:underline">Prestasi</a></li>
-                        <li><a href="#" class="hover:underline">Berita</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Resources -->
-            <div class="border-b md:border-none mt-2 md:mt-4">
-                <div class="flex items-center justify-between">
-                    <h3 class="font-semibold uppercase tracking-wide">Resources</h3>
-                    <button class="md:hidden p-2" @click="resourcesOpen = !resourcesOpen">
-                        <span x-text="resourcesOpen ? '-' : '+'"></span>
-                    </button>
-                </div>
-                <div x-show="desktop || resourcesOpen" x-collapse class="mt-3">
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:underline">Daftar Guru</a></li>
-                        <li><a href="#" class="hover:underline">Daftar Staff</a></li>
-                        <li><a href="#" class="hover:underline">Video Sekolah</a></li>
-                        <li><a href="#" class="hover:underline">Foto Sekolah</a></li>
+                        <li><a href="{{ url('/smp') }}" class="hover:underline">SMP CItra Negara</a></li>
+                        <li><a href="{{ url('/sma') }}" class="hover:underline">SMA CItra Negara</a></li>
+                        <li><a href="{{ url('/smk') }}" class="hover:underline">SMK CItra Negara</a></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Contact Info -->
             <div class="border-b md:border-none mt-2 md:mt-4">
-            <div class="flex items-center justify-between">
-                <h3 class="font-semibold uppercase tracking-wide">Contact Info</h3>
-                <button class="md:hidden p-2" @click="contactOpen = !contactOpen">
-                <span x-text="contactOpen ? '-' : '+'"></span>
-                </button>
-            </div>
-
-            <div x-show="desktop || contactOpen" x-collapse class="mt-3">
-                <div class="text-sm flex flex-col space-y-2 leading-relaxed">
-                <a href="mailto:info@citranegara.sch.id" class="hover:underline">
-                    info@citranegara.sch.id
-                </a>
-                <a href="tel:02177201052" class="hover:underline">
-                    (021) 77201052
-                </a>
-                <p>Senin - Jumat: 07.00 - 17.00</p>
-                <p>Sabtu: 07.00 - 15.00</p>
+                <div class="flex items-center justify-between">
+                    <h3 class="font-semibold uppercase tracking-wide">Info Kontak</h3>
+                    <button class="md:hidden p-2" @click="contactOpen = !contactOpen">
+                        <span x-text="contactOpen ? '-' : '+'"></span>
+                    </button>
                 </div>
-            </div>
+                <div x-show="desktop || contactOpen" x-collapse class="mt-3">
+                    <div class="text-sm space-y-2">
+                        <p><a href="mailto:info@citranegara.sch.id" class="hover:underline break-words">info@citranegara.sch.id</a></p>
+                        <p><a href="tel:02177201052" class="hover:underline">(021) 77201052</a></p>
+                        <p>Senin - Jumat: 07.00 - 17.00</p>
+                        <p>Sabtu: 07.00 - 15.00</p>
+                    </div>
+                </div>
             </div>
         </div>
 

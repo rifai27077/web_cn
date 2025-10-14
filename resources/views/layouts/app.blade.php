@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Citra Negara') }}</title>
+    <meta name="description" content="Citra Negara - Sekolah unggulan yang membentuk generasi terampil, disiplin, dan siap kerja.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Citra Negara, Sekolah Kejuruan, SMK di Depok, SMP di Depok, SMA di Depok, Pendidikan Vokasi">
+    <meta name="author" content="Citra Negara">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @endif
+    <title>Citra Negara</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <style>
         html, body {
@@ -20,8 +27,11 @@
             scroll-behavior: smooth;
             }
 
-            /* optional: jika kamu ingin tetap mengatur box-sizing atau spacing pada semua elemen, pisahkan itu */
         * { box-sizing: border-box; }
+
+       
+        [x-cloak] { display: none !important; }
+
         section {
             scroll-margin-top: 4rem; /* Sesuaikan dengan tinggi header (biasanya 4rem–6rem) */
         }

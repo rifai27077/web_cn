@@ -1,7 +1,7 @@
 <section class="py-16 px-4 bg-white" id="yayasan" data-aos="fade-up">
   <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] drop-shadow-[0_2px_6px_rgba(106,152,18,0.5)] mb-2">Founder</h2>
-    <p class="text-xl md:text-2xl font-semibold text-[#699D15] mb-10">Yayasan AT–TAQWA Kemiri Jaya</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2">Founder</h2>
+    <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-10">Yayasan AT–TAQWA Kemiri Jaya</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 items-end justify-items-center">
 
       <!-- Ketua BPH -->
