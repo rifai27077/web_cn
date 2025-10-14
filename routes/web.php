@@ -26,3 +26,33 @@ Route::get('/berita', function () {return view('berita');});
 Route::get('/berita/grand-opening', function () {return view('berita.grand-opening');});
 
 route::get('/kontak', function () {return view('kontak-info');})->name('kontak');
+
+// smk
+Route::get('/smk', function () {
+    return view('smk.landing');
+});
+
+
+Route::get('/smk/jurusan/{nama}', function ($nama) {
+    return view('smk.jurusan.' . strtolower($nama));
+});
+
+Route::get('/smk/sejarah', function () {
+    return view('smk.sejarah');
+});
+
+Route::get('/smk/yayasan', function () {
+    return view('smk.yayasan');
+});
+
+Route::get('/smk/sekolah', function () {
+    return view('smk.sekolah');
+});
+
+Route::get('/smk/prestasi', function () {
+    return view('smk.prestasi');
+});
+
+Route::get('/smk/ekstrakurikuler', function () {
+    return view('smk.ekstrakurikuler');
+});

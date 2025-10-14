@@ -32,7 +32,7 @@
           <a href="{{ url('/#sejarah') }}" class="hover:text-[#699D15] transition-colors duration-300">Sejarah</a>
           <a href="{{ url('/#yayasan') }}" class="hover:text-[#699D15] transition-colors duration-300">Yayasan</a>
           <a href="{{ url('/#visi-misi') }}" class="hover:text-[#699D15] transition-colors duration-300">Visi & Misi</a>
-          <a href="{{ url('/#sekolah') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
+          <a href="{{ url('/#sekolah') }}" class="hover:text-[#699D15] transition-colors duration-300">Sekolah</a>
           <a href="{{ url('/kontak') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
         </nav>
 
