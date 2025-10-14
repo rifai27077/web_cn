@@ -33,8 +33,6 @@
     style="top: {{ $top }}%; left: {{ $left }}%; width: {{ $size }}px; height: {{ $size }}px; animation-delay: {{ $delay }}s;"
   ></div>
 
-
-
   <!-- Hero Content -->
   <div class="relative z-10 text-center px-6" data-aos="zoom-in" data-aos-duration="1200">
     <h1 class="text-5xl md:text-7xl text-[#C3E956] font-extrabold tracking-wider drop-shadow-[0_0_25px_rgba(195,233,86,0.5)] animate-[fadeDown_1s_ease-out_forwards]">
@@ -211,6 +209,69 @@ window.addEventListener('scroll', () => {
   </div>
 </section>
 
+<<<<<<< HEAD
+=======
+{{-- <section class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14] overflow-hidden" id="vision-mission" data-aos="fade-up" data-aos-duration="1000">
+  <!-- Dekorasi latar -->
+  <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
+  <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <!-- Judul -->
+    <div class="text-center mb-14">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
+        Pilihan yang Tepat, <br />
+        <span class="text-[#E9DC00] drop-shadow-[0_2px_6px_rgba(233,220,0,0.6)]">Di Sekolah yang Mantap</span>
+      </h3>
+      <p class="text-white/90 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
+        Yayasan AT–TAQWA Kemiri Jaya dibangun pada tahun 2004 di Jl. Raya Tanah Baru No.99 Kemiri Jaya, Beji, Depok. 
+        Yayasan ini diprakarsai oleh Bpk. <span class="font-semibold">H. Drs. Nasan, M.M</span>. 
+        Kini, SMK Citra Negara memiliki enam jurusan unggulan: Tata Niaga, Teknik Komputer Jaringan, Multimedia, Administrasi Perkantoran, 
+        Rekayasa Perangkat Lunak, dan Perhotelan.
+      </p>
+    </div>
+
+    <!-- Kartu Visi & Misi -->
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- VISI -->
+      <div class="relative group bg-white rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-3">
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#7CB518]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        
+        <div class="flex items-center mb-6 relative">
+          <div class="flex items-center justify-center h-14 w-14 mr-4 rounded-full bg-[#699D15] shadow-[0_0_15px_rgba(105,157,21,0.4)] transition-transform duration-500 group-hover:scale-110">
+            <img src="/images/sparkles.png" alt="ikon visi" class="h-8 w-8" />
+          </div>
+          <h4 class="text-2xl md:text-3xl font-extrabold text-[#699D15] uppercase tracking-wide">VISI</h4>
+        </div>
+
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed relative z-10">
+          Terwujudnya sekolah yang religius, disiplin, dan terampil dalam menyongsong generasi emas di tahun 2045.
+        </p>
+      </div>
+
+      <!-- MISI -->
+      <div class="relative group bg-white rounded-3xl p-8 shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-3">
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#E9DC00]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+
+        <div class="flex items-center mb-6 relative">
+          <div class="flex items-center justify-center h-14 w-14 mr-4 rounded-full bg-[#E9DC00] shadow-[0_0_15px_rgba(233,220,0,0.5)] transition-transform duration-500 group-hover:scale-110">
+            <img src="/images/vector.png" alt="ikon misi" class="h-8 w-8" />
+          </div>
+          <h4 class="text-2xl md:text-3xl font-extrabold text-[#E9DC00] uppercase tracking-wide">MISI</h4>
+        </div>
+
+        <ul class="text-gray-700 text-base md:text-lg space-y-2 leading-relaxed relative z-10 list-disc pl-6">
+          <li>Mewujudkan insan yang taat beribadah, cinta kitab suci, dan pandai dalam dakwah keagamaan.</li>
+          <li>Membangun peserta didik berperilaku baik, patuh, dan berjiwa kepemimpinan.</li>
+          <li>Mengembangkan keahlian kejuruan dengan sinkronisasi kurikulum dan kerja sama dunia industri.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> --}}
+
+>>>>>>> ed641fbe860ff999ff1f60b989c96079913fa4ca
 <section class="relative py-20 px-6 bg-gradient-to-b from-[#F5F6F7] to-white overflow-hidden" id="sekolah" data-aos="fade-up" data-aos-duration="1000">
   <!-- Dekorasi -->
   <div class="absolute -top-10 -right-10 w-64 h-64 bg-[#8DC63F]/10 rounded-full blur-3xl"></div>
@@ -317,31 +378,25 @@ document.addEventListener('DOMContentLoaded', () => {
 </style>
 @endpush
 
+<<<<<<< HEAD
 <section id="news-section"class="relative py-24 px-6 bg-gradient-to-b from-[#6BAE18] to-[#5C8F14 overflow-hidden">
+=======
+<section 
+  id="news-section"
+  class="relative py-24 px-6 bg-gradient-to-b bg-[#f7f7f7] overflow-hidden"
+>
+>>>>>>> ed641fbe860ff999ff1f60b989c96079913fa4ca
 <div class="absolute inset-0 opacity-20 bg-[url('/images/pattern-light.svg')] bg-repeat"></div>
   <div class="absolute top-0 left-0 w-80 h-80 bg-[#E9DC00]/20 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
   <div class="max-w-7xl mx-auto relative z-10">
 
-    {{-- <!-- 🔥 Running Ticker -->
-    <div class="overflow-hidden mb-8 rounded-full bg-[#EFFBE3] border border-[#C8E6A1] shadow-sm" data-aos="fade-down">
-      <div class="whitespace-nowrap animate-[ticker_25s_linear_infinite] py-2">
-        @foreach ([
-          '🌟 Pendaftaran siswa baru tahun ajaran 2025/2026 telah dibuka!',
-          '🏆 Tim RPL SMK Citra Negara raih Juara 1 LKS Provinsi!',
-          '💡 Simak kegiatan Prakerin 2025 di berbagai perusahaan besar!'
-        ] as $item)
-          <span class="mx-6 text-[#699D15] font-semibold">{{ $item }}</span>
-        @endforeach
-      </div>
-    </div> --}}
-
     <!-- Judul -->
     <div class="text-center mb-14">
-      <h3 class="text-3xl md:text-4xl font-extrabold text-white leading-snug">
+      <h3 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] leading-snug">
         Informasi Terkini
       </h3>
-      <p class="text-white/90 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
+      <p class="text-gray-800 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
         Menjadi lembaga pendidikan kejuruan unggul, berlandaskan nilai religius dan karakter bangsa, serta siap menghadapi era digital.
       </p>
     </div>
@@ -418,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
 @endpush
 
     {{-- CTA --}}
-<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000" id="contact">        
+<section class="pt-20 px-6 bg-white text-center" data-aos="zoom-in" data-aos-duration="1000" id="contact">      
   <h2 class="text-xl md:text-3xl font-extrabold text-[#699D15]">Kami selalu terbuka untukmu</h2>
         <p class="rounded-full mt-2 text-xl md:text-2xl font-bold text-yellow-400">Yuk, mulai langkah menuju masa depan cerah bersama sekolah mantap</p>
         <div class="mt-6 flex flex-wrap justify-center gap-4">
@@ -430,21 +485,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="/images/Desain tanpa judul 1.png" alt="" srcset="">
         </div>
     </section>
-
-    <div id="chat-robibtn-wrapper" 
-        class="fixed bottom-10 right-10 flex flex-col items-end space-y-2 z-50">
-        <!-- Tooltip -->
-        <div id="robi-tooltip" 
-            class="bg-white text-gray-800 text-sm px-3 py-1 rounded-full shadow-md opacity-0 translate-y-2 transition-all duration-700">
-            Hai! Chat dengan Robi 👋
-        </div>
-
-        <a href="/chat" id="chat-robibtn" aria-label="Buka chat Robi"
-            class="relative bg-[#699D15] hover:bg-[#558512] text-white shadow-xl rounded-full w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center transition-all duration-300 opacity-0 scale-75 translate-y-4"
-            style="overflow:visible;">
-            <img src="/images/robi.png" alt="Chat Robi" class="w-[85%] h-[85%] object-contain object-bottom -mb-0.5" />
-        </a>
-    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -461,30 +501,6 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             loop: true, // biar muter terus
             });
-
-            const btn = document.getElementById("chat-robibtn");
-            const tooltip = document.getElementById("robi-tooltip");
-
-            window.addEventListener('DOMContentLoaded', () => {
-                const btn = document.getElementById('chat-robibtn');
-                setTimeout(() => btn.classList.remove('opacity-0','scale-75','translate-y-4'), 300);
-            });
-            // Animasi tombol muncul
-            setTimeout(() => {
-            btn.style.transition = "all 0.6s cubic-bezier(0.22, 1, 0.36, 1)";
-            btn.style.opacity = "1";
-            btn.style.transform = "scale(1) translateY(-5px)";
-            }, 300);
-
-            // Munculkan tooltip
-            setTimeout(() => {
-            tooltip.classList.remove("opacity-0", "translate-y-2");
-            }, 800);
-
-            // Sembunyikan tooltip otomatis
-            setTimeout(() => {
-            tooltip.classList.add("opacity-0", "translate-y-2");
-            }, 3500);
         });
     </script>
 @endsection
