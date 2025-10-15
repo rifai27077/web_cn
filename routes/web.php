@@ -16,6 +16,7 @@ Route::get('/chat', function () {
 });
 
 Route::post('/chatbot', [ChatbotController::class, 'chat']);
+Route::post('/chatbot/reset', [App\Http\Controllers\ChatbotController::class, 'resetChat']);
 
 Route::get('/akademik', [AkademikController::class, 'index'])->name('akademik');
 

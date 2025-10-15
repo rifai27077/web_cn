@@ -9,11 +9,16 @@ class Faq extends Model
 {
     use Searchable;
 
-    protected $fillable = ['question', 'answer', 'category'];
+    protected $fillable = [
+        'question',
+        'answer',
+        'category',
+        'domain', // ✅ penting agar domain disimpan
+    ];
 
     public function aliases()
     {
-        return $this->hasMany(FaqQuestion::class);
+        return $this->hasMany(FaqQuestion::class, 'faq_id', 'id'); // ✅ pastikan relasi jelas
     }
 
     public function toSearchableArray()
@@ -29,7 +34,6 @@ class Faq extends Model
 
     public function getScoutKeyName()
     {
-        return 'id'; // atau 'faq_id' kalau pakai nama lain
+        return 'id';
     }
-
 }
