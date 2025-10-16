@@ -30,6 +30,8 @@ Route::get('/berita/seminar', function () {return view('berita.seminar');});
 
 route::get('/kontak', function () {return view('kontak-info');})->name('kontak');
 
+route::get('/daftar-harga', function () {return view('daftar-harga');})->name('daftar-harga');
+
 // smk
 Route::get('/smk', function () {
     return view('smk.landing');

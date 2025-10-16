@@ -4,11 +4,33 @@
   class="relative h-[95vh] w-full overflow-hidden flex items-center justify-center bg-black"
 >
   <!-- Parallax Background -->
-  <div id="hero-bg" class="absolute inset-0 bg-cover bg-center will-change-transform">
-    <video autoplay loop muted playsinline preload="none" poster="/images/hero-thumb.jpg" class="w-full h-full object-cover object-center">
-      <source src="{{ asset('videos/cn - Trim.mp4') }}" type="video/mp4">
-    </video>
-  </div>
+  <!-- Hero Background -->
+<div id="hero-bg" class="absolute inset-0 bg-cover bg-center will-change-transform">
+  <video 
+    id="hero-video" 
+    autoplay 
+    loop 
+    muted 
+    playsinline 
+    preload="none" 
+    poster="/images/hero-thumb.jpg" 
+    class="w-full h-full object-cover object-center"
+  >
+    <source src="{{ asset('videos/citra-negara.mp4') }}" type="video/mp4">
+  </video>
+</div>
+
+<!-- Tombol Audio -->
+<button 
+  id="audioToggleBtn" 
+  class="absolute bottom-6 right-6 z-50 flex items-center gap-2
+         bg-white/60 backdrop-blur-md text-[#699D15] font-semibold 
+         px-5 py-2.5 rounded-full shadow-lg border border-white/40
+         hover:bg-[#7CB518] hover:text-white hover:shadow-[0_0_20px_rgba(124,181,24,0.6)]
+         transition-all duration-300 active:scale-95"
+>
+  🔇 Aktifkan Audio
+</button>
 
   <!-- Gradient Overlay -->
   <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#C3E956]/10"></div>
@@ -77,6 +99,24 @@
     const scrollY = window.scrollY;
     const speed = 0.4;
     bg.style.transform = `translateY(${scrollY * speed}px) scale(1.1)`;
+  });
+
+  const video = document.getElementById('hero-video');
+  const btn = document.getElementById('audioToggleBtn');
+
+  btn.addEventListener('click', () => {
+    // toggle mute/unmute
+    video.muted = !video.muted;
+
+    // pastikan video tetap jalan
+    video.play();
+
+    // ubah tampilan tombol sesuai status
+    if (video.muted) {
+      btn.innerHTML = '🔇 Aktifkan Audio';
+    } else {
+      btn.innerHTML = '🔊 Matikan Audio';
+    }
   });
 </script>
 @endpush
