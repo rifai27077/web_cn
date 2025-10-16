@@ -18,8 +18,8 @@
     @php
       $news = [
         ['img' => '/images/berita1.png', 'title' => 'Grand Opening SMK Citra Negara 2025', 'date' => '25 Agustus 2025', 'desc' => 'Acara peresmian gedung baru SMK Citra Negara berlangsung meriah dengan berbagai penampilan siswa.', 'link' => '/berita/grand-opening'],
-        ['img' => '/images/berita1.png', 'title' => 'Kegiatan Prakerin 2025 Dimulai', 'date' => '12 Juli 2025', 'desc' => 'Siswa kelas XI mulai melaksanakan Prakerin di berbagai perusahaan besar dan startup nasional.', 'link' => '/berita/prakerin-2025'],
-        ['img' => '/images/berita1.png', 'title' => 'Prestasi di Ajang LKS Provinsi', 'date' => '2 Juni 2025', 'desc' => 'Tim RPL berhasil membawa pulang juara 1 lomba LKS tingkat provinsi tahun 2025.', 'link' => '/berita/lks-provinsi'],
+        ['img' => '/images/berita2.jpg', 'title' => 'PPDB SMK-SMA Citra Negara', 'date' => '1 September 2025', 'desc' => '', 'link' => '/berita/ppdb-smksma'],
+        ['img' => '/images/berita3.jpg', 'title' => 'Seminar', 'date' => '12 Agustus 2025', 'desc' => '', 'link' => '/berita/seminar'],
       ];
     @endphp
 

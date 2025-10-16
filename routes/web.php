@@ -24,6 +24,8 @@ Route::post('/ppdb/store', [PpdbController::class, 'store'])->name('ppdb.store')
 
 Route::get('/berita', function () {return view('berita');});
 Route::get('/berita/grand-opening', function () {return view('berita.grand-opening');});
+Route::get('/berita/ppdb-smksma', function () {return view('berita.ppdb-smksma');});
+Route::get('/berita/seminar', function () {return view('berita.seminar');});
 
 route::get('/kontak', function () {return view('kontak-info');})->name('kontak');
 
