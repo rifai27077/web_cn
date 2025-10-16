@@ -7,11 +7,12 @@
     <!-- Judul -->
     <div class="text-center mb-14">
       <h3 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] leading-snug">
-        Informasi Terkini
+        Berita & Kegiatan Terbaru
       </h3>
-      <p class="text-gray-800 text-base md:text-lg mt-5 max-w-4xl mx-auto leading-relaxed">
-        Menjadi lembaga pendidikan kejuruan unggul, berlandaskan nilai religius dan karakter bangsa, serta siap menghadapi era digital.
+      <p class="text-gray-600 text-base md:text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
+        Ikuti berbagai kegiatan, prestasi, dan informasi terbaru dari lingkungan pendidikan kami.
       </p>
+
     </div>
 
     <!-- Layout baru: 1 berita besar + 2 kecil -->

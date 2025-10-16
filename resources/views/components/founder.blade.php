@@ -1,7 +1,12 @@
 <section class="py-16 px-4 bg-white" id="yayasan" data-aos="fade-up">
   <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2">Founder</h2>
-    <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-10">Yayasan AT–TAQWA Kemiri Jaya</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#699D15] mb-2">
+      Sosok di Balik Yayasan
+    </h2>
+    <p class="text-base md:text-lg text-gray-600 mb-10">
+      Pimpinan dan pendiri Yayasan AT–TAQWA Kemiri Jaya yang menginspirasi dalam membangun pendidikan unggul.
+    </p>
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 items-end justify-items-center">
 
       <!-- Ketua BPH -->

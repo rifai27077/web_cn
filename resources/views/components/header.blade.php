@@ -28,11 +28,37 @@
       </a>
 
       <div class="flex items-center gap-10">
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-800">
           <a href="{{ url('/#sejarah') }}" class="hover:text-[#699D15] transition-colors duration-300">Sejarah</a>
           <a href="{{ url('/#yayasan') }}" class="hover:text-[#699D15] transition-colors duration-300">Yayasan</a>
           <a href="{{ url('/#visi-misi') }}" class="hover:text-[#699D15] transition-colors duration-300">Visi & Misi</a>
-          <a href="{{ url('/#sekolah') }}" class="hover:text-[#699D15] transition-colors duration-300">Sekolah</a>
+
+          <!-- Dropdown Sekolah -->
+          <div class="relative" @mouseenter="dropdown = 'sekolah'" @mouseleave="dropdown = null">
+            <button class="flex items-center gap-1 hover:text-[#699D15] transition-colors duration-300">
+              Sekolah
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div
+              x-show="dropdown === 'sekolah'"
+              x-transition:enter="transition ease-out duration-200"
+              x-transition:enter-start="opacity-0 -translate-y-2"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-150"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 -translate-y-2"
+              class="absolute left-0 mt-2 w-52 bg-white shadow-lg/30 shadow-md rounded-xl border border-gray-100 py-2 z-40"
+            >
+              <a href="/" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">Citra Negara</a>
+              <a href="/smp" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">SMP Citra Negara</a>
+              <a href="/smk" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">SMK Citra Negara</a>
+              <a href="/sma" class="block px-4 py-2.5 hover:bg-gray-50 hover:text-[#699D15] transition">SMA Citra Negara</a>
+            </div>
+          </div>
+
           <a href="{{ url('/kontak') }}" class="hover:text-[#699D15] transition-colors duration-300">Kontak</a>
         </nav>
 
@@ -73,9 +99,25 @@
       <a href="{{ url('/#sejarah') }}" class="py-2">Sejarah</a>
       <a href="{{ url('/#yayasan') }}" class="py-2">Yayasan</a>
       <a href="{{ url('/#visi-misi') }}" class="py-2">Visi & Misi</a>
-      <a href="{{ url('/#sekolah') }}" class="py-2">Sekolah</a>
+
+      <!-- Dropdown Sekolah (mobile) -->
+      <div x-data="{ openSchool:false }">
+        <button @click="openSchool = !openSchool" class="flex justify-between w-full py-2">
+          Sekolah
+          <svg xmlns="http://www.w3.org/2000/svg" :class="{ 'rotate-180': openSchool }" class="w-4 h-4 mt-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div x-show="openSchool" x-collapse class="pl-4 flex flex-col">
+          <a href="/" class="py-1.5">Citra Negara</a>
+          <a href="/smp" class="py-1.5">SMP Citra Negara</a>
+          <a href="/smk" class="py-1.5">SMK Citra Negara</a>
+          <a href="/sma" class="py-1.5">SMA Citra Negara</a>
+        </div>
+      </div>
+
       <a href="{{ url('/kontak') }}" class="py-2">Kontak</a>
-      <a href="/pendaftaran"
+      <a href="/spmb"
         class="mt-3 text-center bg-[#699D15] text-white font-semibold px-5 py-2 rounded-full shadow-md hover:bg-[#7FBF1D] hover:shadow-lg transition-all duration-300">
         DAFTAR SPMB
       </a>

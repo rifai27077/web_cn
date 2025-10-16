@@ -1,5 +1,5 @@
 
-@extends('smk.layouts.app')
+@extends('layouts.app')
 
 @section('content')
 

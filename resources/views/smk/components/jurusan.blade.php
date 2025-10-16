@@ -1,5 +1,5 @@
 <section class="py-20 min-h-[600px] px-6 bg-gradient-to-b from-white via-green-50 to-white" id="jurusan">
-  <div class="max-w-6xl mx-auto text-center">
+  <div class="max-w-7xl mx-auto text-center">
     <h3 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4 leading-tight" data-aos="fade-down">
       Temukan <span class="text-[#7CB518]">Jurusan Unggulan</span>  
       <br class="hidden md:block" /> 

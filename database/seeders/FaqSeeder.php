@@ -50,12 +50,19 @@ Jurusan di SMK Citra Negara:
 - BDP (Bisnis Daring & Pemasaran)
 - OTKP (Otomatisasi Tata Kelola Perkantoran)
 - Perhotelan
+
+Jurusan di SMA Citra Negara:
+- IPA (Ilmu Pengetahuan Alam)
+- IPS (Ilmu Pengetahuan Sosial)
 TEXT,
                 'category' => 'jurusan',
                 'questions' => [
                     'Ada jurusan baru?',
                     'Program keahlian apa yang bisa dipilih?',
                     'jurusan smk cn',
+                    'Jurusan SMA CN apa saja?',
+                    'Program studi di SMA Citra Negara?',
+                    'jurusan sma citra negara',
                 ],
             ],
             [
@@ -161,8 +168,8 @@ TEXT,
                 'question' => 'Siapa kepala sekolah SMP Citra Negara?,Siapa kepala sekolah SMK Citra Negara?,Kepala sekolah SMA CN?',
                 'answer'   => <<<TEXT
 Kepala SMP Citra Negara: Ibu Rosmarina.
-Kepala SMK Citra Negara: Ibu Nurida Puspitasari, S.Si.
-Untuk SMA Citra Negara, silakan cek website resmi: https://sma.citranegara.sch.id/
+Kepala SMK Citra Negara: Abdul Kodir Zaelani, S.Pd.I.
+Kepala SMA Citra Negara: Ahmad Taufik, S.Kom.
 TEXT,
                 'category' => 'kepala_sekolah',
                 'questions' => [
@@ -191,6 +198,7 @@ TEXT,
                 'question' => $faqData['question'],
                 'answer'   => $faqData['answer'],
                 'category' => $faqData['category'],
+                'domain' => 'citranegara.sch.id,smp.citranegara.sch.id,sma.citranegara.sch.id,smk.citranegara.sch.id',
             ]);
 
             $questions = collect($faqData['questions'])->map(fn($q) => [

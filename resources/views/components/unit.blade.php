@@ -4,8 +4,12 @@
   <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#7CB518]/10 rounded-full blur-3xl"></div>
 
   <div class="max-w-7xl mx-auto text-center relative z-10">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-3">Unit Pendidikan</h2>
-    <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-14">Pilih unit pendidikan terbaik untuk masa depanmu</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#7CB518] mb-3">
+      Jelajahi Unit Pendidikan Kami
+    </h2>
+    <p class="text-base md:text-lg text-gray-600 mb-14">
+      Temukan jenjang pendidikan terbaik untuk mengasah potensi dan menyiapkan masa depan gemilang.
+    </p>
 
     <!-- 🔧 Grid diperbaiki -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 justify-items-center">
